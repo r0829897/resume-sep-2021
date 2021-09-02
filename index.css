@@ -9,6 +9,11 @@
   padding: 0;
 }
 
+body {
+  font-size: 12px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .page {
   min-height: 100vh;
   display: grid;
