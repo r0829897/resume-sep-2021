@@ -90,10 +90,8 @@ main section {
 h1 {
   text-transform: uppercase;
   padding: 20px 30px;
-  background: var(--primary-color);
-  color: white;
-  border-bottom: 10px solid black;
-  margin-bottom: 15px;
+  border-left: 7px solid var(--primary-color);
+  margin-bottom: 35px;
 }
 
 /* Languages */
