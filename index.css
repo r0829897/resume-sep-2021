@@ -1,29 +1,111 @@
-* {
+:root {
+  --primary-color: #571e05;
+  --muted-color: #524c4a;
+}
+
+*:not(ul) {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
+.page {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 3fr 7fr;
+  padding: 25px;
 }
 
 .container {
   border: 1px solid grey;
   display: block;
+  padding: 5px;
 }
 
-/* Skill bars */
+h2 {
+  border-bottom: 1px solid black;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+main section {
+  padding: 0 30px;
+}
+
+.muted {
+  font-weight: smaller;
+  color: var(--muted-color);
+}
+
+.i {
+  font-style: italic;
+}
+
+/* Profile Picture */
+.profile-picture-content {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+/* Contact */
+.contact-content {
+  border-top: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  display: flex;
+}
+
+.contact-icon {
+  width: 30px;
+  height: 30px;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+/* Education */
+.education-item {
+  margin-bottom: 15px;
+}
+
+/* Header */
+h1 {
+  text-transform: uppercase;
+  padding: 20px 30px;
+  background: var(--primary-color);
+  color: white;
+  border-bottom: 10px solid black;
+  margin-bottom: 15px;
+}
+
+/* Languages */
+.language-item {
+  margin-bottom: 15px;
+}
 
 .language-skill {
   width: 200px;
-  height: 20px;
+  height: 10px;
+  border: 1px solid black;
+  border-radius: 10%;
 }
 
 .language-skill-bar {
-  background-color: black;
+  background-color: var(--primary-color);
   height: 100%;
 }
 
