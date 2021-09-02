@@ -22,7 +22,6 @@ body {
 }
 
 .container {
-  border: 1px solid grey;
   display: block;
   padding: 5px;
 }
